@@ -42,9 +42,9 @@
 
 ## you can find updated version at 
 ## https://archive.cloudera.com/ml-runtimes/latest/artifacts/repo-assembly.json
-ARG ML_RUNTIME_BASE_VERSION=2025.01.3-b8
+ARG ML_RUNTIME_BASE_VERSION=2025.09.1-b5
 ARG ML_RUNTIME_WORKBENCH_TYPE=python3.12-standard
-ARG VSCODE_SERVER_VERSION=4.100.2
+ARG VSCODE_SERVER_VERSION=4.105.0
 
 
 # Start with a Base CML Runtime & upgrade
@@ -83,7 +83,7 @@ ENV ML_RUNTIME_EDITOR="VsCode" \
     ML_RUNTIME_EDITION="Community" \
     ML_RUNTIME_SHORT_VERSION="${ML_RUNTIME_SHORT_VERSION}" \
     ML_RUNTIME_DESCRIPTION="This runtime includes VsCode editor ${VSCODE_SERVER_VERSION} and is based on PBJ Workbench image with ${ML_RUNTIME_WORKBENCH_TYPE} base on ${ML_RUNTIME_FULL_VERSION}" \
-    ML_RUNTIME_MAINTENANCE_VERSION="2"
+    ML_RUNTIME_MAINTENANCE_VERSION="1"
 
 LABEL com.cloudera.ml.runtime.editor=$ML_RUNTIME_EDITOR \
       com.cloudera.ml.runtime.edition=$ML_RUNTIME_EDITION \

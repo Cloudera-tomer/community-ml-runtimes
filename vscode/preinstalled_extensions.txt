@@ -1,3 +1,5 @@
 ms-python.python
 ms-toolsai.jupyter
 redhat.vscode-yaml
+lucien-martijn.parquet-visualizer
+waderyan.gitblame
